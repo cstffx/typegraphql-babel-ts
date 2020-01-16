@@ -1,0 +1,36 @@
+{
+  "name": "bare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn tsc --watch",
+    "check": "yarn tsc",
+    "build": "yarn webpack --mode=production",
+    "run": "yarn build && node ./dist/bundle.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-syntax-decorators": "^7.8.3",
+    "fork-ts-checker-webpack-plugin": "^3.1.1",
+    "graphql": "^14.5.8",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^13.1.7",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-parameter-decorator": "^1.0.15",
+    "babel-plugin-transform-typescript-metadata": "^0.2.2",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

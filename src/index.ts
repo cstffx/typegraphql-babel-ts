@@ -30,9 +30,12 @@ class RecipeResolver {
 }
 
 async function test() {
+   
     const schema = await buildSchema({
         resolvers: [RecipeResolver],
     });
+    
+    
     console.log(schema);
 }
 
